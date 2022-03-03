@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="411dp"
+        android:layout_height="186dp"
+        android:background="@drawable/gradient"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/logo2"
+            android:layout_width="231dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="37dp"
+            android:layout_marginEnd="156dp"
+            app:srcCompat="@android:mipmap/sym_def_app_icon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="413dp"
+        android:layout_height="391dp"
+        android:layout_marginStart="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="389dp"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="184dp" /><![CDATA[
+
+        />
+    ]]>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="419dp"
+        android:layout_height="156dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        android:background="@drawable/gradient"
+
+        >
+
+        <ImageButton
+            android:id="@+id/btnSave"
+
+            style="@android:style/Widget.DeviceDefault.ImageButton"
+            android:layout_width="124dp"
+            android:layout_height="92dp"
+
+            android:layout_gravity="right|top|end"
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="37dp"
+            android:layout_marginEnd="156dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/roundcorner"
+            android:backgroundTint="#F30707"
+
+            android:foregroundGravity="top"
+            android:rotationX="360"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.906"
+            app:srcCompat="@android:drawable/ic_btn_speak_now"
+            app:tint="#F8F8F8"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
