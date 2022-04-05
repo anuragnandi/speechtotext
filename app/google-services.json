@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "942586093972",
+    "project_id": "wriappemailandsignin",
+    "storage_bucket": "wriappemailandsignin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:942586093972:android:f78de826a3c7c2cfbb2f81",
+        "android_client_info": {
+          "package_name": "com.example.wriappemailandgooglesignin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "942586093972-om66oi3co6m0nlohaaurb6pd7vfi34q9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4aM03qqXas36nQyf8YWf8NU9djn4eAMM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "942586093972-om66oi3co6m0nlohaaurb6pd7vfi34q9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

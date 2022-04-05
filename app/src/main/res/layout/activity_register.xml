@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/logo1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+
+    <EditText
+        android:id="@+id/registerFullName"
+        android:layout_width="323dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="120dp"
+        android:hint="Full Name"
+        android:textAlignment="center"
+        android:background="@drawable/edt_background"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/registerEmail"
+        android:layout_width="323dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:hint="Email"
+        android:textAlignment="center"
+        android:background="@drawable/edt_background"
+        android:inputType="textEmailAddress"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerFullName" />
+
+
+
+    <EditText
+        android:id="@+id/registerPassword"
+        android:layout_width="323dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edt_background"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="true"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerEmail" />
+
+    <EditText
+        android:id="@+id/confirmPassword"
+        android:layout_width="323dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edt_background"
+        android:hint="confrim password"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="true"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerPassword" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="121dp"
+        android:layout_height="51dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/edt_background"
+        android:text="Register"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmPassword"
+        app:layout_constraintVertical_bias="0.2"/>
+
+
+
+    <TextView
+        android:id="@+id/tvAlreadyHaveAccount"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegister"
+        android:layout_marginTop="2dp"
+        android:text="Already have account?"
+        android:textSize="20sp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
